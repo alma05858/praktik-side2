@@ -1,0 +1,50 @@
+<h2>OM MIG</h2>
+<div class="about-me">
+  <p>Jeg er multimediedesignstuderende på KEA med frontend-udvikling som valgfag. Jeg har erfaring med HTML, CSS og JavaScript gennem min uddannelse og interesserer mig for at kode, designe og udvikle websites og andre digitale løsninger. Jeg motiveres af at omsætte idéer og design til funktionelle og brugervenlige løsninger og trives med både den kreative og tekniske del af processen. Jeg er nysgerrig, lærevillig og engageret i at udvikle mine kompetencer, og efter min uddannelse planlægger jeg at tage en top-up i webudvikling.</p>
+  <img class="me-picture" src="/imgs/mig-praktik.png" alt="Picture of Alma" />
+</div>
+
+<style>
+  h2 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    max-width: 45ch;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .me-picture {
+    height: 350px;
+    display: block;
+  }
+
+  .about-me {
+    margin-bottom: 200px;
+  }
+
+  @media (min-width: 800px) {
+    .about-me {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    p {
+      order: 2;
+      margin-top: 40px;
+    }
+
+    h2 {
+      margin-right: 70px;
+    }
+
+    .me-picture {
+      order: 1;
+      margin-left: 30px;
+    }
+  }
+</style>

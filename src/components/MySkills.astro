@@ -1,0 +1,55 @@
+<h2>HVAD KAN JEG?</h2>
+
+<div class="skills">
+  <p>Jeg har erfaring med HTML, CSS og JavaScript og kan udvikle responsive websites med fokus på struktur, funktionalitet og brugeroplevelse. Jeg har arbejdet med UX/UI-design, prototyping i Figma og med at omsætte design til færdige løsninger i kode. Jeg har også kendskab til moderne værktøjer og er i gang med at lære React og Next.js. Mit mål er at styrke mine frontend-kompetencer og blive dygtigere til at udvikle mere avancerede og interaktive webapplikationer.</p>
+
+  <div class="skills-logos">
+    <img src="/imgs/html2.svg" alt="Html logo" />
+    <img src="/imgs/css2.svg" alt="Css logo" />
+    <img src="/imgs/js4.svg" alt="Javascript logo" />
+  </div>
+</div>
+
+<style>
+  h2 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    max-width: 45ch;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .skills-logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 200px 0;
+  }
+
+  .skills-logos img {
+    width: 65px;
+  }
+
+  @media (min-width: 800px) {
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .skills-logos {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    p {
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+</style>

@@ -1,0 +1,85 @@
+---
+import "../css/style.css";
+import "../css/reset.css";
+import Hero from "../components/Hero.astro";
+import AboutMe from "../components/AboutMe.astro";
+import MySkills from "../components/MySkills.astro";
+import FindMe from "../components/FindMe.astro";
+---
+
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imgs/alma-logo.png" />
+
+    <title>Portofolio</title>
+  </head>
+
+  <body id="top">
+    <header>
+      <div class="logo">
+        <div class="logo-img">
+          <a href="index.html">
+            <img src="/imgs/alma-logo.png" alt="Alma Castillo logo" />
+          </a>
+        </div>
+        <p id="datetime"></p>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <div class="menu-section">
+              <p class="menu-tekst">FORSIDE</p>
+              <a href="index.html">TILBAGE TIL FORSIDE</a>
+            </div>
+          </li>
+          <li>
+            <div class="menu-section">
+              <p class="menu-tekst">LÆS OM MIG</p>
+              <ul class="submenu">
+                <li><a href="#om">OM MIG</a></li>
+                <li><a href="#kompetencer">KOMPETENCER</a></li>
+                <li><a href="#find">FIND MIG</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer">
+        <p>LAVET AF ALMA CASTILLO</p>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <section id="om">
+        <AboutMe />
+      </section>
+
+      <section id="kompetencer">
+        <MySkills />
+      </section>
+
+      <section id="find">
+        <FindMe />
+      </section>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
+
+<style>
+  body main {
+    min-height: 100vh;
+    background-image: url("public/imgs/bg-img3.png");
+    background-size: cover;
+    background-position: center;
+  }
+</style>
